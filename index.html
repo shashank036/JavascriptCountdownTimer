@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Countdown</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .container{
+        width: 600px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .box{
+        background: rgb(18, 19, 18);
+        width: 100px;
+        height: 100px;
+        margin: 0 15px;
+        }
+        h3{
+        text-align: center;
+        padding-top: 2px;
+        color: blanchedalmond;
+
+        }
+        .box h1{
+        font-size: 50px;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: 800;
+        margin-bottom: 15px;
+        color: blanchedalmond;
+        }
+        .alert{
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Practice</h1>
+    <div class="container">
+        <div style="width: 130px;" class="box">
+            <h3 id="daystxt">Days</h2>
+            <h1 id="days">00</h1>
+        </div>
+        <div class="box">
+            <h3 id="hourstxt">Hours</h2>
+            <h1 id="hours">00</h1>
+        </div>
+        <div class="box">
+            <h3 id="minutestxt">Minutes</h2>
+            <h1 id="minutes">00</h1>
+        </div>
+        <div class="box">
+            <h3 id="secondstxt">Secondes</h2>
+            <h1 id="seconds">00</h1>
+        </div>
+    </div>
+
+    <div style="background: rgb(204, 24, 24);" class="alert">
+        <h1 style="padding: 50px 80px;color: white;">We are sorry, Event ended ! </h1>
+    </div>
+   <script  src="js/dateTimeCountdown.js" ></script>
+   
+</body>
+</html>
